@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+## just a simple convenience script for running the same command over and over
+
+if [ ! $# == 2 ]; then
+echo "#<< USAGE: loop \"command -ops args\" loop-delay-in-seconds"
+exit
+fi
+
+while	true
+
+do
+	clear
+	echo "##<< RUNNING : $1 : DELAY $2"
+	$1
+	echo "##<< WAIT :: `date` "
+	sleep $2
+done
