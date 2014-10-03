@@ -1,0 +1,1 @@
+[ $(which notify-on-logout) ] && notify-on-logout

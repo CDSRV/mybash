@@ -1,0 +1,1 @@
+[ $(which notify-on-login) ] && notify-on-login
